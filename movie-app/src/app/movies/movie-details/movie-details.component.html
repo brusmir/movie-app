@@ -1,0 +1,7 @@
+<div class="movie">
+	<h1><a [routerLink]="[movie._id]">{{movie?.name}}</a> ({{movie?.year}})</h1>
+	<p>{{movie?.description}}</p>
+	<img src="assets/images/gold_star.png">
+	<span>{{movie?.rating}}</span>
+	<span class="float-right">{{movie?.duration}} mins.</span>
+</div>

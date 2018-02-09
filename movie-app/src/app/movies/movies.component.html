@@ -1,0 +1,13 @@
+<div class="row space">
+	<div class="col-md-6 text-center">
+		<mv-pagination [totalItems]="numberOfMovies" [activePage]="params.page" (onPageChange)="updateParams($event)"></mv-pagination>
+	</div>
+	<div class="col-md-6 text-center">
+		<mv-sort (onSortChange)="updateParams($event)"></mv-sort>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 margin-bottom" *ngFor="let movie of movies">
+		<mv-movie-details [movie]="movie"></mv-movie-details>
+	</div>
+</div>
